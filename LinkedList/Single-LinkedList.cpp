@@ -12,7 +12,7 @@ int main(){
     newlist.addNode(1);
     newlist.PrintList();
     cout<<endl;
-    newlist.DeleteNode(4);
+    newlist.DeleteNode(6);
     newlist.PrintList();
     
     return 0;

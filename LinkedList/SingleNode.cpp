@@ -51,7 +51,10 @@ void SingleNodeList::DeleteNode(int delData){
         delNode = curr;
         curr = curr->NEXT;
         temp->NEXT = curr;
-        
+        if(delNode == head){
+            head = head->NEXT;
+            temp = NULL;
+        }
         delete delNode;
         cout << delData <<" HAS BEEN DELETED\n";
     }
